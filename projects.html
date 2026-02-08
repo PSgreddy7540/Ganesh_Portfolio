@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sai Ganesh Reddy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise-bg"></div>
+
+  <header class="site-header">
+    <div class="logo-mark">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">SGR</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Highlighted Projects</h2>
+        <span class="section-subtitle">Backend-heavy, cloud-native systems</span>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass">
+          <div class="project-header">
+            <h3 class="project-title">Real-Time IoT Telemetry Pipeline</h3>
+            <span class="project-tag">Java • Spring Boot • Kafka • AWS</span>
+          </div>
+          <p class="project-description">
+            A near real-time ingestion and processing pipeline for industrial sensor telemetry, inspired by my work on 
+            data center monitoring systems. Uses Kafka for event-driven ingestion, MongoDB/PostgreSQL for time-series 
+            and aggregated metrics, and AWS (EC2, Lambda, S3, CloudWatch) for scalable operations.
+          </p>
+          <ul class="project-points">
+            <li>High-throughput MQTT ingestion, with TLS-secured device connectivity.</li>
+            <li>Kafka-backed stream processing and resilient consumer groups.</li>
+            <li>Observability via Prometheus, Grafana, and centralized logging.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/your-github-username/iot-telemetry-pipeline" target="_blank" class="btn ghost">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass">
+          <div class="project-header">
+            <h3 class="project-title">Claims & Eligibility Microservices</h3>
+            <span class="project-tag">Java • Spring Cloud • Kafka • RDS</span>
+          </div>
+          <p class="project-description">
+            A microservices-based reference implementation for healthcare claims and eligibility workflows, mirroring 
+            production-grade claims orchestration patterns with event-driven design and secure API boundaries.
+          </p>
+          <ul class="project-points">
+            <li>Decomposed services for claim intake, validation, eligibility, and adjudication.</li>
+            <li>Event-driven orchestration using Kafka, SQS, and SNS style patterns.</li>
+            <li>Database tuning and caching for low-latency eligibility checks.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/your-github-username/claims-eligibility-microservices" target="_blank" class="btn ghost">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass">
+          <div class="project-header">
+            <h3 class="project-title">AI-Assisted Customization Backend Demo</h3>
+            <span class="project-tag">Java 17 • Spring Boot 3 • Redis • AKS</span>
+          </div>
+          <p class="project-description">
+            A conceptual backend inspired by my work on AI-assisted shoe customization at Nike, showcasing 
+            configuration validation, dynamic pricing, and near real-time catalog updates.
+          </p>
+          <ul class="project-points">
+            <li>Domain-aligned microservices deployed on Kubernetes.</li>
+            <li>Redis caching and async flows for low-latency configuration checks.</li>
+            <li>Secure OAuth2/JWT-based APIs for client integration.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/your-github-username/ai-customization-backend" target="_blank" class="btn ghost">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sai Ganesh Reddy • Backend-focused portfolio.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
